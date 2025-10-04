@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download SpeedProof | GPS Tracking App</title>
+  <link rel="icon" href="speed-proof-logo.jpeg" type="image/jpeg" />
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      line-height: 1.6; 
+      background: #f9f9f9; 
+      color: #333; 
+    }
+    
+    header { 
+      background: #004aad; 
+      color: white; 
+      text-align: center; 
+      padding: 2rem; 
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    h1, h2, h3 { 
+      color: #004aad; 
+    }
+    
+    .download-section {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: linear-gradient(135deg, #004aad 0%, #0066cc 100%);
+      color: white;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    
+    .download-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background: white;
+      color: #004aad;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: transform 0.2s;
+    }
+    
+    .download-button:hover {
+      transform: scale(1.05);
+    }
+    
+    .badge-placeholder {
+      margin: 2rem 0;
+      padding: 2rem;
+      background: #f0f7ff;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .requirements {
+      background: #e9f5ff;
+      padding: 1.5rem;
+      border-radius: 6px;
+      border-left: 4px solid #004aad;
+      margin: 1.5rem 0;
+    }
+    
+    .steps {
+      counter-reset: step-counter;
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .steps li {
+      counter-increment: step-counter;
+      margin-bottom: 1.5rem;
+      padding-left: 3rem;
+      position: relative;
+    }
+    
+    .steps li::before {
+      content: counter(step-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #004aad;
+      color: white;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .feature-card {
+      padding: 1.5rem;
+      background: #f9f9f9;
+      border-radius: 6px;
+      border: 2px solid #e0e0e0;
+    }
+    
+    .feature-card h4 {
+      margin-top: 0;
+      color: #004aad;
+    }
+    
+    .status-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #ffc107;
+      color: #333;
+      border-radius: 20px;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+    
+    footer { 
+      text-align: center; 
+      background: #eee; 
+      color: #333; 
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    
+    footer a { 
+      color: #004aad; 
+      text-decoration: underline; 
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: #004aad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Download SpeedProof</h1>
+  <p>Professional GPS Tracking for Driving & Hiking</p>
+</header>
+
+<div class="container">
+  <a href="index.html" class="back-link">? Back to Home</a>
+  
+  <div class="download-section">
+    <h2>Get SpeedProof on Android</h2>
+    <p style="font-size: 1.1rem;">Transform your phone into a professional GPS tracking and documentation system</p>
+    <span class="status-badge">Coming Soon to Google Play Store</span>
+    <br>
+    <!-- Replace # with your actual Play Store URL when published -->
+    <a href="#" class="download-button">Download on Google Play</a>
+    <p style="margin-top: 1rem; font-size: 0.9rem;">Free Download ? Pro Features Available</p>
+  </div>
+  
+  <div class="badge-placeholder">
+    <p style="margin: 0; color: #666;">Google Play Store badge will appear here once the app is published</p>
+    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #999;">SpeedProof is currently in internal testing and will be available soon</p>
+  </div>
+
+  <div class="requirements">
+    <h3 style="margin-top: 0;">System Requirements</h3>
+    <ul>
+      <li><strong>Platform:</strong> Android 8.0 (Oreo) or higher</li>
+      <li><strong>Storage:</strong> Minimum 50 MB available space</li>
+      <li><strong>Permissions:</strong> Location access required for GPS tracking</li>
+      <li><strong>Internet:</strong> Optional (required for weather data only)</li>
+      <li><strong>Hardware:</strong> GPS-enabled device</li>
+    </ul>
+  </div>
+
+  <h2>Installation Instructions</h2>
+  <ol class="steps">
+    <li>
+      <strong>Visit Google Play Store</strong><br>
+      Open the Google Play Store app on your Android device or click the download button above
+    </li>
+    <li>
+      <strong>Search for "SpeedProof"</strong><br>
+      Find SpeedProof: GPS Speed Tracker & Hiking Navigator by David Hall - SpeedProof Systems
+    </li>
+    <li>
+      <strong>Tap "Install"</strong><br>
+      The app will download and install automatically (free download)
+    </li>
+    <li>
+      <strong>Open SpeedProof</strong><br>
+      Launch the app from your home screen or app drawer
+    </li>
+    <li>
+      <strong>Grant Permissions</strong><br>
+      Allow location access when prompted - this is required for GPS tracking functionality
+    </li>
+    <li>
+      <strong>Choose Your Mode</strong><br>
+      Select Driving Mode for vehicle tracking or Hiking Mode for outdoor activities
+    </li>
+    <li>
+      <strong>Start Tracking</strong><br>
+      Tap "Start Tracking" to begin monitoring your speed, location, and activity
+    </li>
+  </ol>
+
+  <h2>What's Included</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h4>Free Version</h4>
+      <ul style="padding-left: 1.2rem;">
+        <li>Basic GPS tracking</li>
+        <li>Real-time speed display</li>
+        <li>Weather integration</li>
+        <li>Compass navigation</li>
+        <li>Activity recording</li>
+      </ul>
+    </div>
+    
+    <div class="feature-card">
+      <h4>SpeedProof Pro</h4>
+      <ul style="padding-left: 1.2rem;">
+        <li>Legal-grade documentation</li>
+        <li>5-mile backtrack reports</li>
+        <li>Waypoint export</li>
+        <li>Premium compass tools</li>
+        <li>"Return to Start" feature</li>
+        <li>Ad-free experience</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>First-Time Setup Tips</h2>
+  <div style="background: #f0f7ff; padding: 1.5rem; border-radius: 6px; margin: 1.5rem 0;">
+    <ul style="margin: 0;">
+      <li><strong>Location Accuracy:</strong> Enable "High Accuracy" mode in your device's location settings for best GPS performance</li>
+      <li><strong>Battery Optimization:</strong> Disable battery optimization for SpeedProof to ensure uninterrupted tracking</li>
+      <li><strong>Screen Timeout:</strong> Use the ON/OFF button in the app to control screen behavior during tracking</li>
+      <li><strong>Control Lock:</strong> Enable the lock feature while driving to prevent accidental stops</li>
+      <li><strong>Test First:</strong> Try the app in a safe location before relying on it for important activities</li>
+    </ul>
+  </div>
+
+  <h2>Troubleshooting</h2>
+  <h3>GPS Not Working?</h3>
+  <ul>
+    <li>Ensure location permissions are granted in device settings</li>
+    <li>Move to an area with clear sky view (avoid buildings, tunnels)</li>
+    <li>Restart the app and allow time for GPS to acquire satellite lock</li>
+    <li>Check that your device's GPS is enabled in system settings</li>
+  </ul>
+
+  <h3>App Won't Install?</h3>
+  <ul>
+    <li>Verify your device meets minimum Android 8.0 requirement</li>
+    <li>Ensure sufficient storage space is available</li>
+    <li>Clear Google Play Store cache and try again</li>
+    <li>Restart your device and attempt installation again</li>
+  </ul>
+
+  <h2>Support & Resources</h2>
+  <p>Need help getting started or have questions?</p>
+  <ul>
+    <li><strong>User Manual:</strong> <a href="user-manual.html">Complete app documentation</a></li>
+    <li><strong>Privacy Policy:</strong> <a href="privacy.html">Data usage and privacy information</a></li>
+    <li><strong>Email Support:</strong> support@speedproofapp.com</li>
+    <li><strong>Website:</strong> www.speed-proof.com</li>
+  </ul>
+
+  <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 1rem; margin: 2rem 0; border-radius: 4px;">
+    <strong>Important Reminder:</strong> SpeedProof is designed for personal awareness and activity improvement. It is NOT intended for legal defense or certified evidence in traffic disputes, insurance claims, or court proceedings. GPS accuracy may vary based on environmental conditions.
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Speed-Proof. All rights reserved.</p>
+  <p><a href='index.html'>Home</a> | <a href='privacy.html'>Privacy Policy</a> | <a href='user-manual.html'>User Manual</a> | <a href='download.html'>Download</a></p>
+</footer>
+
+</body>
+</html>
