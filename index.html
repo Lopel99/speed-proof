@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,14 +92,25 @@
       max-height: 80px;
       margin-bottom: 1rem;
     }
+
+    /* New styles for image positioning */
+    .image-container {
+      float: right;
+      width: 250px;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Your content goes here -->
-</body>
-</html>
-
 
 <header style="background: #004aad; color: white; text-align: center; padding: 2rem;">  
   <h1 style="font-size: 2.5rem; margin-top: 0;">Speed-Proof: Precision Speed Tracking for Every Situation</h1>  
@@ -106,10 +118,12 @@
   <img src="speed-proof-icon.png" alt="SpeedProof Controls" style="width: 5%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); vertical-align: middle; margin-left: 15px;"></p>
 </header>
 
-
-
-
 <section class="benefits">
+  <div class="image-container">
+    <img src="IMG_1751.jpg" alt="SpeedProof Dashboard">
+    <img src="IMG_1752.jpg" alt="SpeedProof Controls">
+  </div>
+
   <h2>Key Benefits</h2>
   <h3><span class="emoji">??</span> GPS-Verified Accuracy</h3>
   <ul>
@@ -213,25 +227,6 @@
     <li>Easy sharing and export</li>
     <li>Intuitive dashboard interface</li>
   </ul>
-</section>
-
-<section class="benefits">
-  <h2>App Preview</h2>
-  <p style="text-align: center; margin-bottom: 2rem;">See the SpeedProof interface in action</p>
-  
-  <div style="display: flex; gap: 2rem; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
-    <div style="flex: 1; min-width: 280px; max-width: 400px; text-align: center;">
-      <img src="IMG_1751.jpg" alt="SpeedProof Dashboard" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-      <h3 style="margin-top: 1rem; color: #004aad;">Dashboard View</h3>
-      <p>Real-time speed tracking with weather integration and comprehensive status display</p>
-    </div>
-    
-    <div style="flex: 1; min-width: 280px; max-width: 400px; text-align: center;">
-      <img src="IMG_1752.jpg" alt="SpeedProof Controls" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-      <h3 style="margin-top: 1rem; color: #004aad;">Control Panel</h3>
-      <p>Mode selection, tracking controls, and report generation options</p>
-    </div>
-  </div>
 </section>
 
 <section class="cta">
