@@ -1,235 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeedProof - Your Evidence. Your Control.</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            text-align: center;
-            padding: 40px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            margin-bottom: 40px;
-            border-radius: 0 0 20px 20px;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .subtitle {
-            font-size: 1.2em;
-            opacity: 0.9;
-            font-weight: 300;
-        }
-        
-        section {
-            background: white;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        h2 {
-            color: #4a5568;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        h3 {
-            color: #2d3748;
-            margin: 25px 0 15px 0;
-        }
-        
-        .feature-list {
-            list-style: none;
-            margin: 20px 0;
-        }
-        
-        .feature-list li {
-            padding: 8px 0;
-            padding-left: 30px;
-            position: relative;
-        }
-        
-        .feature-list li:before {
-            content: "?";
-            position: absolute;
-            left: 0;
-            color: #48bb78;
-            font-weight: bold;
-        }
-        
-        .quote {
-            background: #f7fafc;
-            border-left: 4px solid #667eea;
-            padding: 20px;
-            margin: 25px 0;
-            font-style: italic;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .mode-description {
-            background: #edf2f7;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 15px 0;
-        }
-        
-        .no-limit-badge {
-            display: inline-block;
-            background: #48bb78;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-        
-        .pricing-badge {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-size: 1.1em;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            color: #718096;
-            border-top: 1px solid #e2e8f0;
-            margin-top: 40px;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            section {
-                padding: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed-Proof | Precision Speed Tracking</title>
+
+  <link rel="icon" href="speed-proof-icon.png" type="image/png" sizes="512x512" />
+  <link rel="shortcut icon" href="speed-proof-icon.png" type="image/png" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header, section, footer {
+      padding: 2rem;
+    }
+
+    header {
+      background: #004aad;
+      color: white;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "? ";
+      color: #004aad;
+    }
+
+    .benefits, .use-cases, .scenarios, .why-choose, .cta {
+      background: white;
+      margin: 1rem auto;
+      max-width: 900px;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .emoji {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    .cta {
+      text-align: center;
+      background: #004aad;
+      color: white;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: #004aad;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background: #eee;
+      color: #333;
+    }
+
+    footer a {
+      color: #004aad;
+      text-decoration: underline;
+    }
+
+    .logo {
+      max-height: 80px;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>SpeedProof</h1>
-            <p class="subtitle">Your Evidence. Your Control.</p>
-            <p>Forensic-Grade Location Documentation, Anchored in Your Hands</p>
-            <div class="pricing-badge">1 Month Free Trial o Then $4.99/Month</div>
-        </div>
-    </header>
+  <!-- Your content goes here -->
+</body>
+</html>
+dy>
 
-    <div class="container">
-        <section id="driving-mode">
-            <h2>?? Driving Mode: Precision by Design</h2>
-            <p>SpeedProof doesn't guess. It documents. And you are in command of the record.</p>
-            
-            <div class="mode-description">
-                <h3>How It Works:</h3>
-                <ul class="feature-list">
-                    <li><strong>You Start Tracking</strong> when you begin your drive</li>
-                    <li><strong>You Stop Tracking</strong> when you reach your destination</li>
-                    <li><strong>Result:</strong> A clean, court-ready report of that specific journey</li>
-                </ul>
-            </div>
+<header style="background: #004aad; color: white; text-align: center; padding: 2rem;">  
+  <h1 style="font-size: 2.5rem; margin-top: 0;">Speed-Proof: Precision Speed Tracking for Every Situation</h1>  
+  <p style="font-size: 1.2rem;">Transform Your Phone into a Professional Speed Documentation System
+  <img src="speed-proof-icon.png" alt="SpeedProof Controls" style="width: 5%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); vertical-align: middle; margin-left: 15px;"></p>
+</header>
 
-            <div class="quote">
-                "SpeedProof gives you complete control. You decide when to create a legal-grade driving report. This ensures every document is a clean, intentional record of your journey, with no ambiguous gaps."
-            </div>
 
-            <h3>Why Manual Control Matters:</h3>
-            <ul class="feature-list">
-                <li><strong>Unambiguous Evidence:</strong> No long, irrelevant stationary periods to cloud the data</li>
-                <li><strong>Intentional Documentation:</strong> You decide what constitutes a trip worth legally documenting</li>
-                <li><strong>Respect for Privacy:</strong> The app doesn't silently track your entire day</li>
-                <li><strong>Forensic Clarity:</strong> Each report represents one discrete, defensible journey</li>
-            </ul>
 
-            <div class="no-limit-badge">No Time or Distance Limits</div>
-            <p>Drive for 5 minutes or 5 hours. SpeedProof will continuously log with forensic precision until <strong>you</strong> choose to stop.</p>
-        </section>
 
-        <section id="hiking-mode">
-            <h2>?? Hiking & Compass Mode: Unlimited Exploration</h2>
-            <p>Your adventure doesn't have a distance limit. Neither does our tracking.</p>
-            
-            <div class="mode-description">
-                <h3>Perfect For All Movement on Foot:</h3>
-                <ul class="feature-list">
-                    <li><strong>???? Walking</strong> - Urban routes and daily steps</li>
-                    <li><strong>?? Jogging & Running</strong> - Pace tracking and route memory</li>
-                    <li><strong>?? Hiking & Trail Running</strong> - Elevation and distance stats</li>
-                    <li><strong>?? Exploration</strong> - Offline compass navigation</li>
-                </ul>
-            </div>
+<section class="benefits">
+  <h2>Key Benefits</h2>
+  <h3><span class="emoji">??</span> GPS-Verified Accuracy</h3>
+  <ul>
+    <li>High-precision location tracking with sub-meter accuracy</li>
+    <li>Real-time speed calculations using advanced GPS algorithms</li>
+    <li>Timestamped records with exact coordinates</li>
+    <li>No estimation or guesswork ? only verified data</li>
+  </ul>
 
-            <h3>Compass Mode Features:</h3>
-            <ul class="feature-list">
-                <li><strong>Unlimited Range:</strong> Hike 20 miles out? The compass guides you back to start</li>
-                <li><strong>Real-Time Bearing:</strong> Dynamic heading updates across any terrain</li>
-                <li><strong>Offline Functionality:</strong> No internet required-pure GPS and compass logic</li>
-                <li><strong>Breadcrumb Trail:</strong> Optional path marking for visual recall</li>
-            </ul>
+  <h3><span class="emoji">???</span> Complete Environmental Context</h3>
+  <ul>
+    <li>Real-time weather conditions at time of recording</li>
+    <li>Temperature, humidity, wind speed, and visibility data</li>
+    <li>Weather-integrated reports for comprehensive documentation</li>
+    <li>Essential context for accident reconstruction and legal proceedings</li>
+  </ul>
 
-            <div class="no-limit-badge">No Tracking Caps</div>
-            <p>Your device's battery life and GPS signal are the only constraints. The app itself imposes <strong>no caps</strong> on distance or time.</p>
-        </section>
+  <h3><span class="emoji">??</span> Professional Documentation</h3>
+  <ul>
+    <li>Generate court-ready legal reports in seconds</li>
+    <li>Comprehensive 5-mile route backtracking</li>
+    <li>Professional formatting suitable for insurance claims</li>
+    <li>Detailed analytics with maximum speeds, averages, and duration</li>
+  </ul>
 
-        <section id="trust">
-            <h2>?? Built on a Foundation of Trust</h2>
-            <ul class="feature-list">
-                <li><strong>100% Local Storage:</strong> Your data never leaves your device</li>
-                <li><strong>Transparent Pricing:</strong> 1 month free trial, then $4.99/month</li>
-                <li><strong>Legal-Grade Formatting:</strong> Every report is timestamped, weather-tagged, and ready for official use</li>
-                <li><strong>Privacy-First:</strong> We don't track you. We provide tools for you to document your journey</li>
-                <li><strong>Emergency Ready:</strong> Instant GPS coordinates and exportable reports</li>
-            </ul>
-        </section>
+  <h3><span class="emoji">??</span> Multi-Modal Tracking</h3>
+  <ul>
+    <li>Driving ? Vehicle speed monitoring and safety compliance</li>
+    <li>Running/Jogging ? Athletic performance tracking</li>
+    <li>Walking ? Fitness and pace monitoring</li>
+    <li>Cycling ? Speed and route documentation</li>
+  </ul>
+</section>
+
+<section class="use-cases">
+  <h2>Primary Use Cases</h2>
+
+  <h3><span class="emoji">??</span> Driving Applications</h3>
+  <ul>
+    <li>Prove Speed Limit Compliance</li>
+    <li>Safe Driver Verification</li>
+    <li>Insurance Premium Reductions</li>
+    <li>Fleet Management</li>
+    <li>Accident Documentation</li>
+    <li>Traffic Violation Defense</li>
+  </ul>
+
+  <h3><span class="emoji">??</span> Athletic & Fitness Applications</h3>
+  <ul>
+    <li>Running Pace Analysis</li>
+    <li>Training Optimization</li>
+    <li>Race Preparation</li>
+    <li>Trail Running Safety</li>
+  </ul>
+
+  <h3><span class="emoji">??</span> Professional & Business Uses</h3>
+  <ul>
+    <li>Commercial Transportation Compliance</li>
+    <li>Fleet Safety Programs</li>
+    <li>Emergency Services Documentation</li>
+  </ul>
+</section>
+
+<section class="scenarios">
+  <h2>Real-World Scenarios</h2>
+  <ul>
+    <li><strong>Fender Bender:</strong> "Speed-Proof showed I was going 22 MPH in a 25 MPH zone. Case closed."</li>
+    <li><strong>Insurance Discount:</strong> "15% safe driver discount after 6 months of Speed-Proof data."</li>
+    <li><strong>Athletic Achievement:</strong> "Exact split times proved my pace improvement over the year."</li>
+    <li><strong>Commercial Fleet:</strong> "Reduced insurance premiums by 20% and eliminated speed-related incidents."</li>
+  </ul>
+</section>
+
+<section class="why-choose">
+  <h2>Why Choose Speed-Proof?</h2>
+  <h3>Precision You Can Trust</h3>
+  <ul>
+    <li>Military-grade GPS accuracy</li>
+    <li>Real-time weather integration</li>
+    <li>Court-tested documentation standards</li>
+  </ul>
+
+  <h3>Versatile Applications</h3>
+  <ul>
+    <li>Personal and professional use</li>
+    <li>Individual and fleet tracking</li>
+    <li>Athletic and automotive contexts</li>
+  </ul>
+
+  <h3>Legal Compliance</h3>
+  <ul>
+    <li>Meets evidentiary standards</li>
+    <li>Professional report formatting</li>
+    <li>Metadata-rich documentation</li>
+  </ul>
+
+  <h3>User-Friendly Design</h3>
+  <ul>
+    <li>One-tap start/stop tracking</li>
+    <li>Automatic report generation</li>
+    <li>Easy sharing and export</li>
+    <li>Intuitive dashboard interface</li>
+  </ul>
+</section>
+
+<section class="benefits">
+  <h2>App Preview</h2>
+  <p style="text-align: center; margin-bottom: 2rem;">See the SpeedProof interface in action</p>
+  
+  <div style="display: flex; gap: 2rem; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 280px; max-width: 400px; text-align: center;">
+      <img src="IMG_1751.jpg" alt="SpeedProof Dashboard" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+      <h3 style="margin-top: 1rem; color: #004aad;">Dashboard View</h3>
+      <p>Real-time speed tracking with weather integration and comprehensive status display</p>
     </div>
+    
+    <div style="flex: 1; min-width: 280px; max-width: 400px; text-align: center;">
+      <img src="IMG_1752.jpg" alt="SpeedProof Controls" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+      <h3 style="margin-top: 1rem; color: #004aad;">Control Panel</h3>
+      <p>Mode selection, tracking controls, and report generation options</p>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <p><strong>SpeedProof:</strong> The authority of your journey, documented by you.</p>
-            <p style="margin-top: 10px; font-size: 0.9em;">© 2024 SpeedProof. All rights reserved.</p>
-        </div>
-    </footer>
+<section class="cta">
+  <h2>Get Started Today</h2>
+  <p>Transform uncertainty into certainty. Whether you're protecting yourself on the road, optimizing athletic performance, or managing a commercial fleet, Speed-Proof provides the accurate, legally-compliant documentation you need.</p>
+  <a href='download.html'>Download Speed-Proof</a>
+  <p>Available on Android - Coming Soon to Google Play Store</p>
+  <p style="margin-top: 1.5rem;">Your speed. Your proof. Your protection.</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Speed-Proof. All rights reserved.</p>
+  <p> <a href='About-Speed-Proof'>About SpeedProof</a> | <a href='privacy.html'>Privacy Policy</a> | <a href='User-Manual.html'>User Manual</a> | <a href='Speed-Proof-Benefits'>Speed-Proof Benefits</a></p>
+</footer>
+
 </body>
 </html>
