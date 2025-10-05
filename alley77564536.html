@@ -1,725 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeedProof User Manual</title>
-    <style>
-        body {
-            background-color: white;
-            color: black;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        h1 {
-            text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        .toc {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-left: 4px solid #333;
-            margin: 20px 0;
-        }
-        .disclaimer {
-            background-color: #fff3cd;
-            border: 1px solid #ffeaa7;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        .feature-list {
-            padding-left: 20px;
-        }
-        code {
-            background-color: #f8f9fa;
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-family: monospace;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed-Proof | Precision Speed Tracking</title>
+
+  <link rel="icon" href="speed-proof-icon.png" type="image/png" sizes="512x512" />
+  <link rel="shortcut icon" href="speed-proof-icon.png" type="image/png" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header, section, footer {
+      padding: 2rem;
+    }
+
+    header {
+      background: #004aad;
+      color: white;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "? ";
+      color: #004aad;
+    }
+
+    .benefits, .use-cases, .scenarios, .why-choose, .cta {
+      background: white;
+      margin: 1rem auto;
+      max-width: 900px;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .emoji {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    .cta {
+      text-align: center;
+      background: #004aad;
+      color: white;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: #004aad;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background: #eee;
+      color: #333;
+    }
+
+    footer a {
+      color: #004aad;
+      text-decoration: underline;
+    }
+
+    .logo {
+      max-height: 80px;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-    <a href="index.html" style="display: inline-block; margin-bottom: 1rem; color: #004aad; text-decoration: none; font-weight: bold;">? Back to Home</a>
-        <h1>SpeedProof User Manual<br>Movement & Activity Tracker<br>Version 1.0</h1>
-        <p><strong>Author:</strong> David Hall<br><strong>Effective Date:</strong> September 21, 2025</p>
-        
-        <hr>
-
-        <div class="section">
-            <h2>Table of Contents</h2>
-            <div class="toc">
-                <ol>
-                    <li>Introduction</li>
-                    <li>Getting Started</li>
-                    <li>Interface Overview</li>
-                    <li>Button Functions Guide</li>
-                    <li>Driving Mode</li>
-                    <li>Hiking Mode</li>
-                    <li>Supported Activities</li>
-                    <li>Report Generation</li>
-                    <li>Safety Features</li>
-                    <li>Troubleshooting</li>
-                    <li>Privacy & Legal</li>
-                </ol>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Introduction</h2>
-            <p>SpeedProof is a comprehensive GPS-based tracking application designed to monitor speed, location, and environmental conditions during various movement activities. The app serves two primary modes: Driving Mode for vehicle speed tracking and Hiking Mode for outdoor activities and trail documentation.</p>
-            
-            <h3>Key Features</h3>
-            <ul class="feature-list">
-                <li>Real-time GPS speed and location tracking</li>
-                <li>Weather condition monitoring</li>
-                <li>Waypoint marking and trail documentation</li>
-                <li>Emergency GPS coordinate sharing</li>
-                <li>Comprehensive activity reports</li>
-                <li>Safety controls and data export</li>
-            </ul>
-
-            <div class="disclaimer">
-                <h3>Important Disclaimer</h3>
-                <p>SpeedProof is designed for personal awareness and activity improvement. It is NOT intended for legal defense or certified evidence in traffic disputes, insurance claims, or court proceedings. GPS accuracy can vary based on environmental conditions and device capabilities.</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Getting Started</h2>
-            
-            <h3>System Requirements</h3>
-            <ul class="feature-list">
-                <li>Android device with GPS capability</li>
-                <li>Location permissions enabled</li>
-                <li>Internet connection for weather data (optional for basic tracking)</li>
-            </ul>
-
-            <h3>First Launch</h3>
-            <ol class="feature-list">
-                <li>Grant location permissions when prompted</li>
-                <li>Allow the app to access your current location</li>
-                <li>Weather data will automatically load for your area</li>
-                <li>Choose between Driving Mode or Hiking Mode</li>
-                <li>Press "Start Tracking" to begin monitoring</li>
-            </ol>
-        </div>
-
-        <div class="section">
-            <h2>Interface Overview</h2>
-            
-            <h3>Main Dashboard Elements</h3>
-            
-            <h4>Header Section</h4>
-            <ul class="feature-list">
-                <li>Application title: "SpeedProof Dashboard"</li>
-                <li>No logo - clean, focused design</li>
-            </ul>
-
-            <h4>Speed/Activity Display Card</h4>
-            <ul class="feature-list">
-                <li>Large numerical display showing current speed (Driving Mode) or GPS points (Hiking Mode)</li>
-                <li>Real-time statistics relevant to selected mode</li>
-                <li>Status indicators for tracking state</li>
-                <li>Lock status notification when controls are secured</li>
-            </ul>
-
-            <h4>Weather Information Card</h4>
-            <ul class="feature-list">
-                <li>Current temperature, conditions, and visibility</li>
-                <li>Humidity and wind speed data</li>
-                <li>Last update timestamp</li>
-                <li>Manual refresh capability</li>
-            </ul>
-
-            <h4>Control Sections</h4>
-            <ul class="feature-list">
-                <li>Mode selection buttons</li>
-                <li>Primary tracking controls</li>
-                <li>Hiking-specific functions</li>
-                <li>Report generation options</li>
-                <li>App information and privacy access</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Button Functions Guide</h2>
-            
-            <h3>Primary Controls</h3>
-            
-            <h4>Start Tracking / Stop Tracking</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Initiates or terminates GPS monitoring</li>
-                <li><strong>Behavior:</strong> Records location, speed, and timestamp data every 1-2 seconds</li>
-                <li><strong>Status:</strong> Green when stopped, Red when active</li>
-                <li><strong>Lock Protection:</strong> Disabled when controls are locked to prevent accidental stops</li>
-            </ul>
-
-            <h4>LOCK / UNLK</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Safety mechanism to prevent accidental button presses</li>
-                <li><strong>Purpose:</strong> Particularly useful during driving to avoid ending tracking sessions</li>
-                <li><strong>Visual:</strong> Orange when locked, Gray when unlocked</li>
-                <li><strong>Toast Notification:</strong> Confirms lock status changes</li>
-            </ul>
-
-            <h4>ON / OFF (Display Control)</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Controls screen timeout behavior</li>
-                <li><strong>ON:</strong> Keeps screen active during tracking (useful while driving)</li>
-                <li><strong>OFF:</strong> Allows normal screen timeout to conserve battery</li>
-                <li><strong>Visual:</strong> Green when ON, Gray when OFF</li>
-            </ul>
-
-            <h3>Mode Selection</h3>
-            
-            <h4>Driving Mode</h4>
-            <ul class="feature-list">
-                <li><strong>Purpose:</strong> Optimized for vehicle speed tracking</li>
-                <li><strong>Display:</strong> Shows current speed in MPH with maximum speed tracking</li>
-                <li><strong>Features:</strong> Speed records, legal documentation, backtrack reports</li>
-                <li><strong>Use Cases:</strong> Personal driving awareness, trip documentation</li>
-            </ul>
-
-            <h4>Hiking Mode</h4>
-            <ul class="feature-list">
-                <li><strong>Purpose:</strong> Designed for walking, hiking, and outdoor activities</li>
-                <li><strong>Display:</strong> Shows GPS points collected and distance traveled</li>
-                <li><strong>Features:</strong> Waypoint marking, emergency GPS, trail reports</li>
-                <li><strong>Use Cases:</strong> Hiking, walking, outdoor recreation, emergency preparedness</li>
-            </ul>
-
-            <h3>Weather Functions</h3>
-            
-            <h4>Refresh (Weather)</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Updates current weather data for your location</li>
-                <li><strong>Data Source:</strong> OpenWeatherMap API</li>
-                <li><strong>Information:</strong> Temperature, conditions, humidity, wind, visibility</li>
-            </ul>
-
-            <h4>Test Weather API</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Diagnostic tool to verify weather service connectivity</li>
-                <li><strong>Purpose:</strong> Troubleshooting weather data issues</li>
-                <li><strong>Fallback:</strong> Uses test coordinates if location unavailable</li>
-            </ul>
-
-            <h3>Hiking Mode Specific</h3>
-            
-            <h4>Mark Waypoint</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Saves current GPS location as a named reference point</li>
-                <li><strong>Information Captured:</strong> Coordinates, elevation, timestamp, automatic naming</li>
-                <li><strong>Requirements:</strong> Must be actively tracking to mark waypoints</li>
-                <li><strong>Use Cases:</strong> Points of interest, trail markers, emergency references</li>
-            </ul>
-
-            <h4>Emergency GPS</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Instantly generates shareable coordinate information</li>
-                <li><strong>Output:</strong> Exact coordinates, elevation, weather conditions, emergency contact format</li>
-                <li><strong>Purpose:</strong> Search and rescue, emergency situations, location sharing</li>
-                <li><strong>Format:</strong> Compatible with professional GPS equipment and rescue services</li>
-            </ul>
-
-            <h3>Report Generation</h3>
-            
-            <h4>Generate Legal Doc with Weather (Driving Mode)</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Creates comprehensive speed and weather documentation</li>
-                <li><strong>Content:</strong> Speed analysis, weather conditions, GPS coordinates, timestamps</li>
-                <li><strong>Purpose:</strong> Insurance documentation, personal records</li>
-                <li><strong>Requirements:</strong> Speed data and weather information must be available</li>
-            </ul>
-
-            <h4>Generate 5-Mile Backtrack Report (Driving Mode)</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Analyzes the last 5 miles of travel</li>
-                <li><strong>Content:</strong> Route details, speed variations, detailed GPS coordinates</li>
-                <li><strong>Purpose:</strong> Recent travel documentation, route verification</li>
-            </ul>
-
-            <h4>Generate Hiking Trail Report (Hiking Mode)</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Comprehensive trail documentation</li>
-                <li><strong>Content:</strong> Distance, duration, waypoints, weather, safety information</li>
-                <li><strong>Purpose:</strong> Trail records, safety documentation, activity logs</li>
-            </ul>
-
-            <h4>Export Waypoints & Coordinates (Hiking Mode)</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Detailed coordinate list of all marked waypoints</li>
-                <li><strong>Formats:</strong> Decimal degrees and degrees-minutes-seconds (DMS)</li>
-                <li><strong>Purpose:</strong> Emergency reference, professional GPS compatibility, navigation</li>
-            </ul>
-
-            <h4>Share Report</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Creates and shares activity summary</li>
-                <li><strong>Content:</strong> Key statistics, weather, basic tracking information</li>
-                <li><strong>Format:</strong> Text-based for easy sharing via any communication method</li>
-            </ul>
-
-            <h3>Information Access</h3>
-            
-            <h4>Privacy Policy</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Displays complete privacy policy and data usage information</li>
-                <li><strong>Content:</strong> Data collection practices, user rights, accuracy disclaimers</li>
-                <li><strong>Importance:</strong> Legal compliance and user transparency</li>
-            </ul>
-
-            <h4>Q&A (App Information)</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Interactive help system explaining all button functions</li>
-                <li><strong>Content:</strong> Detailed explanations of each feature and use case</li>
-                <li><strong>Purpose:</strong> User education and troubleshooting guidance</li>
-            </ul>
-
-            <h4>Debug (App Information)</h4>
-            <ul class="feature-list">
-                <li><strong>Function:</strong> Technical diagnostic information</li>
-                <li><strong>Content:</strong> API status, location data, system information</li>
-                <li><strong>Purpose:</strong> Troubleshooting and technical support</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Driving Mode</h2>
-            
-            <h3>Purpose and Applications</h3>
-            <p>Driving Mode is designed for vehicle operation and personal speed awareness. This mode focuses on capturing and analyzing speed data with environmental context.</p>
-            
-            <h3>Typical Use Cases</h3>
-            <ul class="feature-list">
-                <li>Personal driving speed awareness</li>
-                <li>Trip documentation and analysis</li>
-                <li>Understanding speed patterns and habits</li>
-                <li>Environmental condition correlation with travel</li>
-            </ul>
-
-            <h3>Key Features</h3>
-            <ul class="feature-list">
-                <li>Real-time speed display in MPH</li>
-                <li>Maximum speed tracking during session</li>
-                <li>Comprehensive speed record keeping</li>
-                <li>Weather condition correlation</li>
-                <li>Legal-style documentation generation</li>
-            </ul>
-
-            <h3>Best Practices</h3>
-            <ol class="feature-list">
-                <li>Enable screen-on mode while driving for continuous visibility</li>
-                <li>Lock controls after starting to prevent accidental stops</li>
-                <li>Ensure GPS has clear sky view for accurate readings</li>
-                <li>Allow app to run uninterrupted for complete data collection</li>
-            </ol>
-
-            <h3>Data Collected</h3>
-            <ul class="feature-list">
-                <li>Speed measurements every 1-2 seconds</li>
-                <li>GPS coordinates with accuracy ratings</li>
-                <li>Timestamps for all data points</li>
-                <li>Weather conditions during travel</li>
-                <li>Route information and duration</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Hiking Mode</h2>
-            
-            <h3>Purpose and Applications</h3>
-            <p>Hiking Mode transforms SpeedProof into a comprehensive outdoor activity tracker with emphasis on safety, navigation, and trail documentation.</p>
-            
-            <h3>Typical Use Cases</h3>
-            <ul class="feature-list">
-                <li>Hiking and backpacking expeditions</li>
-                <li>Trail running and outdoor fitness</li>
-                <li>Emergency preparedness and safety</li>
-                <li>Nature photography location marking</li>
-                <li>Search and rescue coordination</li>
-                <li>Scout group and educational activities</li>
-            </ul>
-
-            <h3>Key Features</h3>
-            <ul class="feature-list">
-                <li>GPS point collection and distance calculation</li>
-                <li>Waypoint marking with elevation data</li>
-                <li>Emergency coordinate generation</li>
-                <li>Trail documentation and reporting</li>
-                <li>Weather condition monitoring</li>
-                <li>Professional coordinate format support</li>
-            </ul>
-
-            <h3>Safety Applications</h3>
-            <ol class="feature-list">
-                <li>Emergency GPS: Instant coordinate sharing for rescue situations</li>
-                <li>Waypoint System: Trail marking and reference points</li>
-                <li>Weather Monitoring: Environmental condition awareness</li>
-                <li>Trail Reports: Complete documentation for safety planning</li>
-            </ol>
-
-            <h3>Best Practices</h3>
-            <ol class="feature-list">
-                <li>Test app functionality before entering remote areas</li>
-                <li>Mark waypoints regularly for navigation reference</li>
-                <li>Generate emergency GPS when in doubt about location</li>
-                <li>Monitor battery usage and adjust screen timeout accordingly</li>
-                <li>Share plans with others including expected waypoints</li>
-            </ol>
-        </div>
-
-        <div class="section">
-            <h2>Supported Activities</h2>
-            
-            <h3>Primary Activities</h3>
-            
-            <h4>Driving and Motor Vehicle Operation</h4>
-            <ul class="feature-list">
-                <li>Personal cars, trucks, motorcycles</li>
-                <li>RV and recreational vehicle travel</li>
-                <li>Fleet vehicle monitoring (personal use)</li>
-                <li>Road trip documentation</li>
-            </ul>
-
-            <h4>Hiking and Walking</h4>
-            <ul class="feature-list">
-                <li>Day hiking and multi-day backpacking</li>
-                <li>Nature walks and trail exploration</li>
-                <li>Urban walking and city exploration</li>
-                <li>Walking for fitness and exercise</li>
-            </ul>
-
-            <h4>Running and Jogging</h4>
-            <ul class="feature-list">
-                <li>Trail running in natural environments</li>
-                <li>Urban running and jogging</li>
-                <li>Marathon and race training</li>
-                <li>Fitness tracking and improvement</li>
-            </ul>
-
-            <h4>Cycling</h4>
-            <ul class="feature-list">
-                <li>Road cycling and touring</li>
-                <li>Mountain biking and trail riding</li>
-                <li>Commuter cycling</li>
-                <li>Recreational bike riding</li>
-            </ul>
-
-            <h3>Secondary Applications</h3>
-            
-            <h4>Water Activities</h4>
-            <ul class="feature-list">
-                <li>Recreational boating and sailing</li>
-                <li>Kayaking and canoeing</li>
-                <li>Fishing expeditions</li>
-                <li>Waterway exploration</li>
-            </ul>
-
-            <h4>Adventure Sports</h4>
-            <ul class="feature-list">
-                <li>Cross-country skiing</li>
-                <li>Snowshoeing</li>
-                <li>ATV and off-road exploration</li>
-                <li>Adventure racing</li>
-            </ul>
-
-            <h4>Professional Uses</h4>
-            <ul class="feature-list">
-                <li>Search and rescue operations</li>
-                <li>Educational outdoor programs</li>
-                <li>Scientific field work</li>
-                <li>Emergency response training</li>
-            </ul>
-
-            <h3>Activity-Specific Considerations</h3>
-            
-            <h4>Speed-Focused Activities (Use Driving Mode)</h4>
-            <ul class="feature-list">
-                <li>Emphasizes real-time speed monitoring</li>
-                <li>Generates speed-based reports and documentation</li>
-                <li>Best for activities where speed is primary concern</li>
-            </ul>
-
-            <h4>Location-Focused Activities (Use Hiking Mode)</h4>
-            <ul class="feature-list">
-                <li>Emphasizes position tracking and waypoint marking</li>
-                <li>Generates trail and coordinate documentation</li>
-                <li>Best for activities where location and route are primary concerns</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Report Generation</h2>
-            
-            <h3>Report Types and Applications</h3>
-            
-            <h4>Legal Documentation Report</h4>
-            <ul class="feature-list">
-                <li><strong>Purpose:</strong> Formal documentation with weather correlation</li>
-                <li><strong>Best For:</strong> Insurance needs, personal records, trip verification</li>
-                <li><strong>Contains:</strong> Speed analysis, weather conditions, GPS verification, timestamps</li>
-                <li><strong>Format:</strong> Professional documentation with unique report ID</li>
-            </ul>
-
-            <h4>5-Mile Backtrack Report</h4>
-            <ul class="feature-list">
-                <li><strong>Purpose:</strong> Recent travel analysis and route verification</li>
-                <li><strong>Best For:</strong> Disputed routes, travel verification, speed pattern analysis</li>
-                <li><strong>Contains:</strong> Detailed route coordinates, speed variations, time analysis</li>
-                <li><strong>Scope:</strong> Covers last 5 miles of recorded travel</li>
-            </ul>
-
-            <h4>Hiking Trail Report</h4>
-            <ul class="feature-list">
-                <li><strong>Purpose:</strong> Comprehensive outdoor activity documentation</li>
-                <li><strong>Best For:</strong> Trail records, safety documentation, activity sharing</li>
-                <li><strong>Contains:</strong> Distance, duration, waypoints, weather, safety information</li>
-                <li><strong>Format:</strong> Complete trail analysis with coordinates</li>
-            </ul>
-
-            <h4>Waypoint Export</h4>
-            <ul class="feature-list">
-                <li><strong>Purpose:</strong> Professional coordinate reference document</li>
-                <li><strong>Best For:</strong> Emergency preparedness, navigation planning, rescue coordination</li>
-                <li><strong>Contains:</strong> All waypoints in multiple coordinate formats</li>
-                <li><strong>Compatibility:</strong> Works with professional GPS equipment</li>
-            </ul>
-
-            <h4>Activity Summary</h4>
-            <ul class="feature-list">
-                <li><strong>Purpose:</strong> Quick sharing and social documentation</li>
-                <li><strong>Best For:</strong> Social media, quick communication, activity logs</li>
-                <li><strong>Contains:</strong> Key statistics, weather summary, basic information</li>
-                <li><strong>Format:</strong> Concise, shareable text format</li>
-            </ul>
-
-            <h3>Report Sharing and Export</h3>
-            <p>All reports are generated as text documents that can be:</p>
-            <ul class="feature-list">
-                <li>Shared via email, messaging, or social media</li>
-                <li>Saved to device storage</li>
-                <li>Printed for physical documentation</li>
-                <li>Imported into other applications</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Safety Features</h2>
-            
-            <h3>Personal Safety</h3>
-            
-            <h4>Control Lock System</h4>
-            <ul class="feature-list">
-                <li>Prevents accidental stopping of tracking during critical activities</li>
-                <li>Reduces driver distraction by securing interface</li>
-                <li>Maintains data integrity during extended sessions</li>
-            </ul>
-
-            <h4>Emergency GPS Function</h4>
-            <ul class="feature-list">
-                <li>Provides instant coordinate sharing for rescue situations</li>
-                <li>Includes weather conditions and elevation data</li>
-                <li>Compatible with professional rescue services</li>
-                <li>Works without cellular coverage (for apps that have coordinates)</li>
-            </ul>
-
-            <h4>Waypoint Safety Net</h4>
-            <ul class="feature-list">
-                <li>Creates breadcrumb trail for navigation reference</li>
-                <li>Marks important locations for return navigation</li>
-                <li>Provides coordinate backup for emergency reference</li>
-            </ul>
-
-            <h3>Data Safety</h3>
-            
-            <h4>Local Storage</h4>
-            <ul class="feature-list">
-                <li>All location data remains on your device</li>
-                <li>No personal information transmitted to third parties</li>
-                <li>Complete user control over data retention and sharing</li>
-            </ul>
-
-            <h4>Privacy Protection</h4>
-            <ul class="feature-list">
-                <li>No user account required</li>
-                <li>No personal data collection beyond app functionality</li>
-                <li>Transparent privacy policy with clear data usage explanation</li>
-            </ul>
-
-            <h3>Usage Safety Guidelines</h3>
-            <ol class="feature-list">
-                <li>Never rely solely on SpeedProof for critical navigation</li>
-                <li>Carry backup navigation tools in remote areas</li>
-                <li>Inform others of your plans when using for outdoor activities</li>
-                <li>Test functionality before depending on it in critical situations</li>
-                <li>Monitor battery levels during extended tracking sessions</li>
-                <li>Understand GPS limitations in heavy tree cover or urban canyons</li>
-            </ol>
-        </div>
-
-        <div class="section">
-            <h2>Troubleshooting</h2>
-            
-            <h3>Common Issues and Solutions</h3>
-            
-            <h4>GPS Not Working</h4>
-            <ul class="feature-list">
-                <li>Ensure location permissions are granted</li>
-                <li>Move to area with clear sky view</li>
-                <li>Restart app and allow time for GPS lock</li>
-                <li>Check device GPS settings</li>
-            </ul>
-
-            <h4>Weather Data Not Loading</h4>
-            <ul class="feature-list">
-                <li>Verify internet connection</li>
-                <li>Use "Test Weather API" button for diagnostics</li>
-                <li>Weather functionality is optional - tracking works without it</li>
-                <li>Try refreshing weather data manually</li>
-            </ul>
-
-            <h4>Inaccurate Speed Readings</h4>
-            <ul class="feature-list">
-                <li>GPS accuracy varies by environment and device</li>
-                <li>Allow time for GPS to stabilize after app start</li>
-                <li>Avoid use in areas with poor GPS reception</li>
-                <li>Remember SpeedProof is for personal awareness, not precision measurement</li>
-            </ul>
-
-            <h4>App Crashes or Freezes</h4>
-            <ul class="feature-list">
-                <li>Restart the application</li>
-                <li>Ensure sufficient device storage space</li>
-                <li>Close other resource-intensive apps</li>
-                <li>Update to latest version if available</li>
-            </ul>
-
-            <h4>Battery Drain</h4>
-            <ul class="feature-list">
-                <li>Adjust screen timeout settings using ON/OFF button</li>
-                <li>Close app when not actively tracking</li>
-                <li>Consider device power saving modes for extended use</li>
-            </ul>
-
-            <h3>Performance Optimization</h3>
-            
-            <h4>For Best GPS Performance</h4>
-            <ul class="feature-list">
-                <li>Use device with clear view of sky</li>
-                <li>Allow app to run in foreground during tracking</li>
-                <li>Avoid rapid movement between indoor/outdoor environments</li>
-                <li>Ensure device has adequate battery charge</li>
-            </ul>
-
-            <h4>For Extended Battery Life</h4>
-            <ul class="feature-list">
-                <li>Use OFF setting for display timeout</li>
-                <li>Track only when needed</li>
-                <li>Close app completely when finished</li>
-                <li>Consider airplane mode with GPS enabled in remote areas</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Privacy & Legal</h2>
-            
-            <h3>Data Collection and Usage</h3>
-            <p>SpeedProof collects only the minimum data necessary for functionality:</p>
-            <ul class="feature-list">
-                <li><strong>Location Data:</strong> GPS coordinates for speed and position calculation</li>
-                <li><strong>Weather Data:</strong> Environmental conditions from third-party services</li>
-                <li><strong>Usage Data:</strong> Anonymous app performance information</li>
-            </ul>
-
-            <h3>Data Storage and Control</h3>
-            <ul class="feature-list">
-                <li><strong>Local Storage:</strong> All personal data remains on your device</li>
-                <li><strong>No Cloud Storage:</strong> Location data is never transmitted to external servers</li>
-                <li><strong>User Control:</strong> Complete ability to delete data at any time</li>
-                <li><strong>No Account Required:</strong> No personal information collection</li>
-            </ul>
-
-            <h3>Legal Limitations</h3>
-            
-            <h4>Not for Legal Evidence</h4>
-            <ul class="feature-list">
-                <li>SpeedProof data is not certified for legal proceedings</li>
-                <li>GPS accuracy varies and cannot be guaranteed</li>
-                <li>Designed for personal awareness and improvement only</li>
-                <li>Should not be relied upon for dispute resolution</li>
-            </ul>
-
-            <h4>Accuracy Disclaimer</h4>
-            <ul class="feature-list">
-                <li>GPS signals affected by environmental factors</li>
-                <li>Weather data provided by third-party services</li>
-                <li>All data should be considered informational only</li>
-                <li>No warranty of accuracy or reliability provided</li>
-            </ul>
-
-            <h3>User Responsibilities</h3>
-            <ol class="feature-list">
-                <li>Follow all applicable laws while using SpeedProof</li>
-                <li>Do not use while driving unless safely mounted and configured</li>
-                <li>Respect privacy of others when sharing location data</li>
-                <li>Use emergency features responsibly and only when appropriate</li>
-                <li>Understand limitations of GPS and weather data accuracy</li>
-            </ol>
-
-            <h3>Contact Information</h3>
-<p>For questions, support, or privacy concerns:</p>
-<ul class="feature-list">
-  <li><strong>Email:</strong> support@speedproofapp.com</li>
-  <li><strong>Website:</strong> <a href="https://www.speed-proof.com/privacy.html">https://www.speed-proof.com/privacy.html</a></li>
-  <li><strong>Privacy Policy:</strong> Available within app and on website</li>
-</ul>
-
-</div>
-
-<div class="section">
-  <h2>Conclusion</h2>
-  <p>SpeedProof: Movement & Activity Tracker provides comprehensive GPS monitoring for both vehicle and outdoor activities. By understanding the features, limitations, and proper usage guidelines outlined in this manual, users can maximize the app's value while maintaining safety and privacy.</p>
-  <p>Remember that SpeedProof is designed to enhance your awareness and documentation of activities, not replace proper safety equipment, navigation tools, or common sense. Always prioritize safety over data collection and use the app as one tool among many for your movement and activity needs.</p>
-  <p>For the most current information and updates, always refer to the in-app privacy policy and Q&A sections, as these may be updated more frequently than this manual.</p>
-</div>
-
-<hr>
-
-<p><strong>Document Version:</strong> 1.0<br>
-<strong>Last Updated:</strong> September 21, 2025<br>
-<strong>Next Review:</strong> March 21, 2026</p>
-
-<footer style="text-align: center; background: #eee; padding: 2rem; margin-top: 3rem;">
+  <!-- Your content goes here -->
+</body>
+</html>
+
+
+<header style="background: #004aad; color: white; text-align: center; padding: 2rem;">  
+  <h1 style="font-size: 2.5rem; margin-top: 0;">Speed-Proof: Precision Speed Tracking for Every Situation</h1>  
+  <p style="font-size: 1.2rem;">Transform Your Phone into a Professional Speed Documentation System
+  <img src="speed-proof-icon.png" alt="SpeedProof Controls" style="width: 5%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); vertical-align: middle; margin-left: 15px;"></p>
+</header>
+
+
+
+
+<section class="benefits">
+  <h2>Key Benefits</h2>
+  <h3><span class="emoji">??</span> GPS-Verified Accuracy</h3>
+  <ul>
+    <li>High-precision location tracking with sub-meter accuracy</li>
+    <li>Real-time speed calculations using advanced GPS algorithms</li>
+    <li>Timestamped records with exact coordinates</li>
+    <li>No estimation or guesswork ? only verified data</li>
+  </ul>
+
+  <h3><span class="emoji">???</span> Complete Environmental Context</h3>
+  <ul>
+    <li>Real-time weather conditions at time of recording</li>
+    <li>Temperature, humidity, wind speed, and visibility data</li>
+    <li>Weather-integrated reports for comprehensive documentation</li>
+    <li>Essential context for accident reconstruction and legal proceedings</li>
+  </ul>
+
+  <h3><span class="emoji">??</span> Professional Documentation</h3>
+  <ul>
+    <li>Generate court-ready legal reports in seconds</li>
+    <li>Comprehensive 5-mile route backtracking</li>
+    <li>Professional formatting suitable for insurance claims</li>
+    <li>Detailed analytics with maximum speeds, averages, and duration</li>
+  </ul>
+
+  <h3><span class="emoji">??</span> Multi-Modal Tracking</h3>
+  <ul>
+    <li>Driving ? Vehicle speed monitoring and safety compliance</li>
+    <li>Running/Jogging ? Athletic performance tracking</li>
+    <li>Walking ? Fitness and pace monitoring</li>
+    <li>Cycling ? Speed and route documentation</li>
+  </ul>
+</section>
+
+<section class="use-cases">
+  <h2>Primary Use Cases</h2>
+
+  <h3><span class="emoji">??</span> Driving Applications</h3>
+  <ul>
+    <li>Prove Speed Limit Compliance</li>
+    <li>Safe Driver Verification</li>
+    <li>Insurance Premium Reductions</li>
+    <li>Fleet Management</li>
+    <li>Accident Documentation</li>
+    <li>Traffic Violation Defense</li>
+  </ul>
+
+  <h3><span class="emoji">??</span> Athletic & Fitness Applications</h3>
+  <ul>
+    <li>Running Pace Analysis</li>
+    <li>Training Optimization</li>
+    <li>Race Preparation</li>
+    <li>Trail Running Safety</li>
+  </ul>
+
+  <h3><span class="emoji">??</span> Professional & Business Uses</h3>
+  <ul>
+    <li>Commercial Transportation Compliance</li>
+    <li>Fleet Safety Programs</li>
+    <li>Emergency Services Documentation</li>
+  </ul>
+</section>
+
+<section class="scenarios">
+  <h2>Real-World Scenarios</h2>
+  <ul>
+    <li><strong>Fender Bender:</strong> "Speed-Proof showed I was going 22 MPH in a 25 MPH zone. Case closed."</li>
+    <li><strong>Insurance Discount:</strong> "15% safe driver discount after 6 months of Speed-Proof data."</li>
+    <li><strong>Athletic Achievement:</strong> "Exact split times proved my pace improvement over the year."</li>
+    <li><strong>Commercial Fleet:</strong> "Reduced insurance premiums by 20% and eliminated speed-related incidents."</li>
+  </ul>
+</section>
+
+<section class="why-choose">
+  <h2>Why Choose Speed-Proof?</h2>
+  <h3>Precision You Can Trust</h3>
+  <ul>
+    <li>Military-grade GPS accuracy</li>
+    <li>Real-time weather integration</li>
+    <li>Court-tested documentation standards</li>
+  </ul>
+
+  <h3>Versatile Applications</h3>
+  <ul>
+    <li>Personal and professional use</li>
+    <li>Individual and fleet tracking</li>
+    <li>Athletic and automotive contexts</li>
+  </ul>
+
+  <h3>Legal Compliance</h3>
+  <ul>
+    <li>Meets evidentiary standards</li>
+    <li>Professional report formatting</li>
+    <li>Metadata-rich documentation</li>
+  </ul>
+
+  <h3>User-Friendly Design</h3>
+  <ul>
+    <li>One-tap start/stop tracking</li>
+    <li>Automatic report generation</li>
+    <li>Easy sharing and export</li>
+    <li>Intuitive dashboard interface</li>
+  </ul>
+</section>
+
+<section class="benefits">
+  <h2>App Preview</h2>
+  <p style="text-align: center; margin-bottom: 2rem;">See the SpeedProof interface in action</p>
+  
+  <div style="display: flex; gap: 2rem; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 280px; max-width: 400px; text-align: center;">
+      <img src="IMG_1751.jpg" alt="SpeedProof Dashboard" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+      <h3 style="margin-top: 1rem; color: #004aad;">Dashboard View</h3>
+      <p>Real-time speed tracking with weather integration and comprehensive status display</p>
+    </div>
+    
+    <div style="flex: 1; min-width: 280px; max-width: 400px; text-align: center;">
+      <img src="IMG_1752.jpg" alt="SpeedProof Controls" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+      <h3 style="margin-top: 1rem; color: #004aad;">Control Panel</h3>
+      <p>Mode selection, tracking controls, and report generation options</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Get Started Today</h2>
+  <p>Transform uncertainty into certainty. Whether you're protecting yourself on the road, optimizing athletic performance, or managing a commercial fleet, Speed-Proof provides the accurate, legally-compliant documentation you need.</p>
+  <a href='download.html'>Download Speed-Proof</a>
+  <p>Available on Android - Coming Soon to Google Play Store</p>
+  <p style="margin-top: 1.5rem;">Your speed. Your proof. Your protection.</p>
+</section>
+
+<footer>
   <p>&copy; 2025 Speed-Proof. All rights reserved.</p>
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="User-Manual.html">User Manual</a> |
-    <a href="download.html">Download</a>
-  </p>
+  <p> <a href='About-Speed-Proof'>About SpeedProof</a> | <a href='privacy.html'>Privacy Policy</a> | <a href='User-Manual.html'>User Manual</a> | <a href='Speed-Proof-Benefits'>Speed-Proof Benefits</a></p>
+  <p><a href='Things-You-Need-To-Know-About-SpeedProof'>Things You Need To Know About SpeedProof</a> | <a href='How-SpeedProof-Works'>How SpeedProof Works</a> | <a href='Speed-Proof-Benefits'>SpeedProof Benefits</a></p>
 </footer>
 
-    </div>
 </body>
 </html>
