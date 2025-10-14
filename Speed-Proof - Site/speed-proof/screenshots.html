@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpeedProof App Screenshots | Interface Preview</title>
+  <link rel="icon" href="speed-proof-logo.jpeg" type="image/jpeg" />
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      line-height: 1.6; 
+      background: #f9f9f9; 
+      color: #333; 
+    }
+    
+    header { 
+      background: #004aad; 
+      color: white; 
+      text-align: center; 
+      padding: 2rem; 
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    h1, h2, h3 { 
+      color: #004aad; 
+    }
+    
+    .intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 3rem;
+      margin: 3rem 0;
+    }
+    
+    .screenshot-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .screenshot-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .screenshot-card img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      margin-bottom: 1.5rem;
+    }
+    
+    .screenshot-card h3 {
+      margin: 1rem 0 0.5rem 0;
+      font-size: 1.5rem;
+    }
+    
+    .screenshot-card p {
+      color: #666;
+      line-height: 1.8;
+    }
+    
+    .features-list {
+      text-align: left;
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+    
+    .features-list li {
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+    
+    .cta-section {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, #004aad 0%, #0066cc 100%);
+      color: white;
+      border-radius: 8px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background: white;
+      color: #004aad;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: transform 0.2s;
+    }
+    
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+    
+    footer { 
+      text-align: center; 
+      background: #eee; 
+      color: #333; 
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    
+    footer a { 
+      color: #004aad; 
+      text-decoration: underline; 
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #004aad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SpeedProof App Interface</h1>
+  <p>See the app in action - Dashboard and Controls</p>
+</header>
+
+<div class="container">
+  <a href="index.html" class="back-link">? Back to Home</a>
+  
+  <div class="intro">
+    <h2>Explore the SpeedProof Interface</h2>
+    <p>Get a detailed look at SpeedProof's intuitive design and powerful features. Our dual-mode interface provides everything you need for accurate GPS tracking, whether you're driving or hiking.</p>
+  </div>
+
+  <div class="screenshot-grid">
+    <!-- Dashboard Screenshot -->
+    <div class="screenshot-card">
+      <img src="IMG_1751.jpeg" alt="SpeedProof Dashboard - Real-time Speed Tracking">
+      <h3>Dashboard View</h3>
+      <p>The main dashboard displays your current speed in real-time with clear, easy-to-read metrics.</p>
+      
+      <ul class="features-list">
+        <li><strong>Current Speed Display:</strong> Large, clear speed readout in MPH</li>
+        <li><strong>Max Speed Tracking:</strong> Records your maximum speed during the session</li>
+        <li><strong>Record Counter:</strong> Shows number of GPS data points collected</li>
+        <li><strong>Status Indicator:</strong> Visual confirmation of tracking state (STOPPED/TRACKING)</li>
+        <li><strong>Weather Integration:</strong> Real-time weather data loading for environmental context</li>
+        <li><strong>Quick Actions:</strong> Start Tracking and Test Weather buttons for instant control</li>
+      </ul>
+    </div>
+
+    <!-- Control Panel Screenshot -->
+    <div class="screenshot-card">
+      <img src="IMG_1836.jpeg" alt="SpeedProof Controls - Report Generation and Settings">
+      <h3>Control Panel</h3>
+      <p>Access advanced features, report generation, and app settings through the comprehensive control panel.</p>
+      
+      <ul class="features-list">
+        <li><strong>Report Generation:</strong> Create legal documentation with weather data</li>
+        <li><strong>5-Mile Backtrack:</strong> Generate detailed route analysis reports</li>
+        <li><strong>Share Reports:</strong> Easily share activity summaries via any app</li>
+        <li><strong>Debug Information:</strong> Access technical diagnostics when needed</li>
+        <li><strong>Mode Switching:</strong> Toggle between Driving and Hiking modes</li>
+        <li><strong>Weather Controls:</strong> Manual weather refresh and API testing</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <h2>Ready to Experience SpeedProof?</h2>
+    <p>Download the app and start tracking your activities with professional-grade GPS accuracy and comprehensive reporting.</p>
+    <a href="download.html" class="cta-button">Download SpeedProof</a>
+    <p style="margin-top: 1rem; font-size: 0.9rem;">Available for Android - Coming Soon to Google Play Store</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Speed-Proof. All rights reserved.</p>
+  <p><a href='index.html'>Home</a> | <a href='privacy.html'>Privacy Policy</a> | <a href='user-manual.html'>User Manual</a> | <a href='download.html'>Download</a></p>
+</footer>
+
+</body>
+</html>
