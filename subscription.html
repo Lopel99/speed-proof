@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed-Proof Premium | Precision Speed Tracking Subscription</title>
+
+  <link rel="icon" href="speed-proof-icon.png" type="image/png" sizes="512x512" />
+  <link rel="shortcut icon" href="speed-proof-icon.png" type="image/png" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 50%, #ffd3b6 100%);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Hero Section - Clean with just logo and text */
+    .hero-section {
+      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)), 
+                  url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80') no-repeat center 30%;
+      background-size: cover;
+      color: #2d3436;
+      text-align: center;
+      padding: 6rem 2rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      border: 3px solid #004aad;
+      min-height: 60vh;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+    }
+
+    .logo-container {
+      margin-bottom: 2rem;
+    }
+
+    /* Logo with faded corners */
+    .logo {
+      height: 80px;
+      width: auto;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3)) 
+              contrast(1.1) 
+              brightness(1.1);
+      -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
+      mask-image: radial-gradient(circle, black 70%, transparent 100%);
+      border-radius: 50%;
+      background: transparent;
+    }
+
+    .hero-section h1 {
+      font-size: 3em;
+      margin-bottom: 1rem;
+      color: #004aad;
+      text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+    }
+
+    .hero-subtitle {
+      font-size: 1.4em;
+      margin-bottom: 1rem;
+      color: #2d3436;
+      font-weight: 500;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+    }
+
+    /* Wilderness Section - Clean scenery only */
+    .wilderness-section {
+      background: url('https://images.unsplash.com/photo-1464822759849-e30de63cac75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80') no-repeat center 40%;
+      background-size: cover;
+      border-radius: 20px;
+      padding: 5rem 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      position: relative;
+      min-height: 50vh;
+    }
+
+    .wilderness-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.1); /* Very light overlay */
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    .wilderness-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #2d3436;
+    }
+
+    .wilderness-title {
+      font-size: 2.5em;
+      margin-bottom: 1rem;
+      color: #004aad;
+      text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+    }
+
+    .wilderness-subtitle {
+      font-size: 1.3em;
+      color: #2d3436;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* App Showcase - Now below wilderness section */
+    .app-showcase-section {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border: 3px solid #004aad;
+    }
+
+    .app-showcase-title {
+      text-align: center;
+      color: #004aad;
+      font-size: 2.2em;
+      margin-bottom: 2rem;
+    }
+
+    .app-showcase {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin: 2rem 0 0 0;
+    }
+
+    .app-image {
+      background: white;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      border: 3px solid transparent;
+    }
+
+    .app-image:hover {
+      transform: translateY(-8px);
+      border-color: #004aad;
+    }
+
+    .app-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #f0f0f0;
+    }
+
+    .image-caption {
+      margin-top: 12px;
+      font-weight: 600;
+      color: #004aad;
+      font-size: 1.1em;
+    }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 3rem 0;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      border: 2px solid #004aad;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    .feature-icon {
+      font-size: 3em;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+
+    .feature-card h3 {
+      color: #004aad;
+      margin-bottom: 12px;
+      font-size: 1.3em;
+    }
+
+    .feature-card p {
+      color: #666;
+      font-size: 1em;
+    }
+
+    /* Pricing Section */
+    .pricing-section {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      margin: 3rem 0;
+      border: 3px solid #004aad;
+    }
+
+    .pricing-title {
+      color: #004aad;
+      font-size: 2.5em;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-subtitle {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .price-badge {
+      background: linear-gradient(135deg, #004aad, #4a90ff);
+      color: white;
+      padding: 2.5rem 2rem;
+      border-radius: 15px;
+      margin: 2rem auto;
+      max-width: 400px;
+      box-shadow: 0 10px 25px rgba(0, 74, 173, 0.3);
+    }
+
+    .price-highlight {
+      font-size: 1.2em;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .price-amount {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 1rem 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .price-note {
+      font-size: 1.1em;
+      opacity: 0.95;
+    }
+
+    /* CTA Buttons */
+    .cta-buttons {
+      margin: 2.5rem 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #004aad, #4a90ff);
+      color: white;
+      padding: 18px 40px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0, 74, 173, 0.3);
+      border: none;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 15px 35px rgba(0, 74, 173, 0.4);
+    }
+
+    .cta-button.secondary {
+      background: linear-gradient(135deg, #00b894, #55efc4);
+      box-shadow: 0 10px 25px rgba(0, 184, 148, 0.3);
+    }
+
+    .cta-button.secondary:hover {
+      box-shadow: 0 15px 35px rgba(0, 184, 148, 0.4);
+    }
+
+    .guarantee {
+      color: #666;
+      font-style: italic;
+      margin-top: 1.5rem;
+      font-size: 1em;
+    }
+
+    .guarantee-badge {
+      background: #ffeaa7;
+      color: #333;
+      padding: 12px 25px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .premium-footer {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 15px;
+      margin-top: 2rem;
+    }
+
+    .premium-footer a {
+      color: #004aad;
+      text-decoration: underline;
+      margin: 0 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 4rem 1rem;
+        background-position: center 25%;
+      }
+
+      .hero-section h1 {
+        font-size: 2.2em;
+      }
+
+      .wilderness-title {
+        font-size: 2em;
+      }
+
+      .pricing-title {
+        font-size: 2em;
+      }
+
+      .cta-button {
+        padding: 16px 30px;
+        font-size: 1.1em;
+        margin: 10px 5px;
+        display: block;
+        text-align: center;
+      }
+
+      .price-amount {
+        font-size: 2.5em;
+      }
+
+      .app-showcase {
+        grid-template-columns: 1fr;
+      }
+
+      .wilderness-section {
+        background-position: center 35%;
+        padding: 4rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-section {
+        padding: 3rem 1rem;
+        min-height: 50vh;
+      }
+
+      .hero-section h1 {
+        font-size: 1.8em;
+      }
+
+      .logo {
+        height: 60px;
+      }
+
+      .wilderness-title {
+        font-size: 1.6em;
+      }
+
+      .pricing-title {
+        font-size: 1.6em;
+      }
+
+      .hero-subtitle {
+        font-size: 1.1em;
+      }
+
+      .wilderness-subtitle {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Hero Section - Clean with just logo and text -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="logo-container">
+          <img src="speed-proof-icon.png" alt="SpeedProof" class="logo" onerror="this.style.display='none'">
+        </div>
+        
+        <h1>Go Premium with Speed-Proof</h1>
+        <p class="hero-subtitle">Unlock Advanced GPS Tracking for Your Outdoor Adventures</p>
+      </div>
+    </section>
+
+    <!-- Wilderness Section - Clean scenery only -->
+    <section class="wilderness-section">
+      <div class="wilderness-content">
+        <h2 class="wilderness-title">Track Your Adventures in Nature</h2>
+        <p class="wilderness-subtitle">From mountain trails to forest paths, Speed-Proof keeps you on track with precision GPS technology</p>
+      </div>
+    </section>
+
+    <!-- App Showcase Section - Now below wilderness -->
+    <section class="app-showcase-section">
+      <h2 class="app-showcase-title">See Speed-Proof in Action</h2>
+      <div class="app-showcase">
+        <div class="app-image">
+          <img src="Driving_Mode.png" alt="SpeedProof Driving Mode" onerror="this.innerHTML='<div style=\'background: #004aad; height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;\'>Driving Mode</div>'">
+          <div class="image-caption">Driving Mode</div>
+        </div>
+        
+        <div class="app-image">
+          <img src="Hiking_Mode.png" alt="SpeedProof Hiking Mode" onerror="this.innerHTML='<div style=\'background: #00b894; height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;\'>Hiking Mode</div>'">
+          <div class="image-caption">Hiking Mode</div>
+        </div>
+        
+        <div class="app-image">
+          <img src="Report_Mode.png" alt="SpeedProof Reports" onerror="this.innerHTML='<div style=\'background: #ff7675; height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;\'>Report Generation</div>'">
+          <div class="image-caption">Activity Reports</div>
+        </div>
+      </div>
+
+      <!-- Features Grid moved here -->
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">???</div>
+          <h3>5-Mile Backtrack</h3>
+          <p>Never get lost with intelligent route retracing and detailed path documentation</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">?</div>
+          <h3>Speed Validation</h3>
+          <p>Professional-grade speed tracking with timestamped verification</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">???</div>
+          <h3>Live Weather Integration</h3>
+          <p>Real-time weather conditions integrated with your location data</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">??</div>
+          <h3>Activity Documentation</h3>
+          <p>Generate detailed reports for your outdoor activities and adventures</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+      <h2 class="pricing-title">Start Your Adventure Today</h2>
+      <p class="pricing-subtitle">Join users who trust Speed-Proof for accurate outdoor tracking</p>
+      
+      <div class="price-badge">
+        <div class="price-highlight">SPECIAL LAUNCH OFFER</div>
+        <div class="price-amount">1 MONTH FREE</div>
+        <div class="price-note">then just $4.99/month</div>
+      </div>
+      
+      <div class="cta-buttons">
+        <a href="YOUR_OPT_IN_URL_HERE" class="cta-button">
+          ?? Start Free Trial
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.speedproof.speedproof" class="cta-button secondary">
+          ?? Get on Google Play
+        </a>
+      </div>
+      
+      <p class="guarantee">? No commitment required • Cancel anytime • Satisfaction guaranteed</p>
+      <div class="guarantee-badge">30-Day Risk Free Trial</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-footer">
+      <p>&copy; 2025 Speed-Proof. All rights reserved.</p>
+      <p>
+        <a href='About-Speed-Proof.html'>About</a> | 
+        <a href='privacy.html'>Privacy Policy</a> | 
+        <a href='User-Manual.html'>User Manual</a> | 
+        <a href='Speed-Proof-Benefits.html'>Benefits</a> | 
+        <a href='How-SpeedProof-Works'>How It Works</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    // Simple animation for feature cards
+    document.addEventListener('DOMContentLoaded', function() {
+      const featureCards = document.querySelectorAll('.feature-card');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      featureCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+      });
+    });
+  </script>
+</body>
+</html>
