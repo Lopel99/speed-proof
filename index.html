@@ -28,10 +28,18 @@
   <meta name="twitter:description" content="Explore off-grid with Speed-Proof, the magnetometer-powered navigation app that works without GPS.">
   <meta name="twitter:image" content="https://www.speed-proof.com/images/twitter-card.jpg">
 
+  <!-- Redirect www to root domain -->
+  <script>
+    if (window.location.hostname === "www.speed-proof.com") {
+      window.location.href = "https://speed-proof.com" + window.location.pathname + window.location.search;
+    }
+  </script>
+
   <link rel="icon" href="speed-proof-icon.png" type="image/png" sizes="512x512" />
   <link rel="shortcut icon" href="speed-proof-icon.png" type="image/png" />
 
   <style>
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
