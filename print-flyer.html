@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpeedProof Flyer</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #333;
+}
+
+.page {
+    width: 8.5in;
+    height: 11in;
+    margin: 0 auto;
+    padding: 0;
+    background: white;
+}
+
+.header {
+    background: white;
+    color: black;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid #4CAF50;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.header p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.website-box {
+    background: #FFD700;
+    color: #1a5d1a;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    border: 3px solid #FFC700;
+}
+
+.content {
+    padding: 30px;
+}
+
+.columns {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.column {
+    display: table-cell;
+    width: 50%;
+    padding: 0 15px;
+    vertical-align: top;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    color: #2E7D32;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #4CAF50;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.features li:before {
+    content: "?";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.highlight {
+    background: #E8F5E8;
+    border-left: 5px solid #4CAF50;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.emergency {
+    background: #FFEBEE;
+    border-left: 5px solid #F44336;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.steps {
+    display: table;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.step {
+    display: table-cell;
+    width: 33.33%;
+    text-align: center;
+    padding: 10px;
+}
+
+.step-number {
+    font-size: 36px;
+    color: #2E7D32;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.step-title {
+    font-weight: bold;
+    color: #2E7D32;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.step-desc {
+    font-size: 13px;
+    color: #666;
+}
+
+.bottom-section {
+    display: table;
+    width: 100%;
+}
+
+.bottom-left {
+    display: table-cell;
+    width: 65%;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.bottom-right {
+    display: table-cell;
+    width: 35%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.download-box {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.beta-badge {
+    background: #FF9800;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 5px solid #2E7D32;
+}
+
+.contact {
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .page {
+        margin: 0;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <h1>Your Personal Adventure Tracker</h1>
+        <p>Document Every Journey ? Navigate with Confidence</p>
+        <div class="website-box">?? www.speed-proof.com</div>
+    </div>
+
+    <div class="content">
+        <div class="columns">
+            <div class="column">
+                <div class="section">
+                    <div class="section-title">?? Driving Mode</div>
+                    <ul class="features">
+                        <li>Real-time speed tracking & analytics</li>
+                        <li>5-mile backtrack route memory</li>
+                        <li>Trip documentation with weather data</li>
+                        <li>Beautiful journey reports for sharing</li>
+                        <li>Moving vs. stationary time analysis</li>
+                        <li>Distance traveled verification</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">?? Hiking Mode</div>
+                    <ul class="features">
+                        <li>Hybrid navigation back to start point</li>
+                        <li>Compass mode for wilderness navigation</li>
+                        <li>Waypoint marking at interesting locations</li>
+                        <li>Distance, elevation & fitness tracking</li>
+                        <li>Trail documentation with coordinates</li>
+                        <li>Offline GPS functionality</li>
+                    </ul>
+                </div>
+
+                <div class="highlight">
+                    <strong>? Perfect For:</strong> Road trips, scenic drives, day hiking, trail exploration, fitness tracking, and outdoor adventures!
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="section">
+                    <div class="section-title">?? Navigation Features</div>
+                    <ul class="features">
+                        <li>Online/offline Google Maps integration</li>
+                        <li>Real-time location tracking</li>
+                        <li>Coordinate copying & sharing</li>
+                        <li>Continuous navigation updates</li>
+                        <li>Physical compass instructions</li>
+                        <li>Automatic start point recording</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">?? Reporting & Sharing</div>
+                    <ul class="features">
+                        <li>Trip documentation with weather</li>
+                        <li>Hiking trail reports</li>
+                        <li>5-mile backtrack analysis</li>
+                        <li>Waypoint coordinate exports</li>
+                        <li>One-tap sharing via any app</li>
+                        <li>Professional format reports</li>
+                    </ul>
+                </div>
+
+                <div class="emergency">
+                    <div class="section-title" style="color: #F44336;">?? Emergency GPS</div>
+                    <ul class="features">
+                        <li>One-tap emergency coordinate generation</li>
+                        <li>Instantly share exact location & elevation</li>
+                        <li>Works completely offline - GPS only</li>
+                        <li>Compatible with rescue equipment</li>
+                        <li>Perfect for emergency situations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">?? How It Works</div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Start Tracking</div>
+                    <div class="step-desc">Begin your drive or hike with one tap</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Explore & Document</div>
+                    <div class="step-desc">Mark waypoints, track routes, capture data</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Share & Remember</div>
+                    <div class="step-desc">Generate reports, share with friends</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="bottom-left">
+                <div class="section">
+                    <div class="section-title">? Frequently Asked Questions</div>
+                    <ul class="features">
+                        <li><strong>Works offline?</strong> ? YES! GPS works without cell service</li>
+                        <li><strong>GPS accuracy?</strong> Typically 5-15 meters with phone GPS</li>
+                        <li><strong>Data privacy?</strong> All data stays on your device only</li>
+                        <li><strong>Cost?</strong> Currently FREE during beta testing!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom-right">
+                <div class="section-title">?? Get the App</div>
+                <div class="download-box">
+                    <div style="font-size: 16px; font-weight: bold; color: #2E7D32; margin-bottom: 10px;">Visit Our Website</div>
+                    <div style="font-size: 18px; background: white; padding: 12px; border-radius: 8px; font-weight: bold;">www.speed-proof.com</div>
+                </div>
+                <div class="beta-badge">BETA TESTING - FREE</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contact">
+            <strong>Website:</strong> www.speed-proof.com | <strong>Email:</strong> speedproofapp@gmail.com
+        </div>
+        <div style="font-size: 13px; margin-top: 5px;">
+            Document Your Journeys ? Share Your Adventures ? Enjoy the Experience
+        </div>
+    </div>
+</div>
+</body>
+</html>
