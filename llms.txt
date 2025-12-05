@@ -1,0 +1,11 @@
+# llms.txt for Speed-Proof
+
+site: https://speed-proof.com
+title: Speed-Proof | Airline, Driving & Hiking Modes
+description: Speed-Proof is a GPS-free navigation app designed for off-grid travel, including Airplane Mode, Driving Mode, and Hiking Mode. It uses magnetometer and compass-based tracking to deliver altitude, speed, and location without relying on satellites.
+
+documentation: https://speed-proof.com/User-Manual.html
+privacy_policy: https://speed-proof.com/privacy.html
+contact: speedproofapp@gmail.com
+
+keywords: speedproof, gps-free navigation, magnetometer, hiking app, airline mode, driving mode, altitude tracking, offline speed tracker, compass-only navigation, return-to-origin
