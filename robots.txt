@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://speed-proof.com/sitemap.xml
+llms: https://speed-proof.com/llms.txt
